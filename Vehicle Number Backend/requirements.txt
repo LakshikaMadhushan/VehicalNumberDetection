@@ -1,0 +1,15 @@
+Flask
+SQLAlchemy
+Flask
+Flask-SQLAlchemy
+pymysql
+boto3
+cryptography
+flask-cors
+SQLAlchemy-serializer
+flask-serialize
+pytesseract
+DetectChars
+DetectPlates
+PossiblePlate
+cv2

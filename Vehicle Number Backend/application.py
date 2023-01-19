@@ -21,8 +21,8 @@ cors = CORS(application)
 
 application.config[
     'SQLALCHEMY_DATABASE_URI'] = jsonObject['dburl']
-# application.config[
-#     'SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:root@localhost:3306/ebdb"
+application.config[
+    'SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:1234@localhost:3306/ebdb"
 db = SQLAlchemy(application)
 application.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 application.config['CORS_HEADERS'] = 'Content-Type'
@@ -218,15 +218,15 @@ def imageToText():
             file_name = secure_filename(file.filename)
             file.save(file_name)
 
-            bucket_name = jsonObject['bucket_name']
-            response = client.upload_file(file_name, bucket_name, file_name, ExtraArgs={
-                'ACL': 'public-read'
-            })
+            # bucket_name = jsonObject['bucket_name']
+            # response = client.upload_file(file_name, bucket_name, file_name, ExtraArgs={
+            #     'ACL': 'public-read'
+            # })
+            #
+            # bucket_name = jsonObject['bucket_name']
+            # res = client.download_file(bucket_name, file_name, '/New_Project_2.jpg')
 
-            bucket_name = jsonObject['bucket_name']
-            res = client.download_file(bucket_name, file_name, '/New_Project_2.jpg')
-
-            tess.pytesseract.tesseract_cmd = r'D:\Users\User\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
+            tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
             from PIL import Image
 
             img = Image.open(file_name)

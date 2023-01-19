@@ -11,7 +11,7 @@ import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 import React, {Component} from "react";
-import sample from '../../assets/sample.mp4'
+// import sample from '../../assets/sample.mp4'
 
 class Realtime extends Component {
 
@@ -24,10 +24,10 @@ class Realtime extends Component {
                     <Grid container spacing={6}>
                         <Grid item xs={12}>
                             <Card>
-                                <video controls autoPlay>
-                                    <source src={sample} type="video/mp4">
-                                    </source>
-                                </video>
+                                {/*<video controls autoPlay>*/}
+                                {/*    <source src={sample} type="video/mp4">*/}
+                                {/*    </source>*/}
+                                {/*</video>*/}
                             </Card>
                         </Grid>
                     </Grid>

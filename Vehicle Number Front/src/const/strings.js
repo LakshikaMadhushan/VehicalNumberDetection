@@ -5,7 +5,7 @@
  */
 export const strings = {
     // footer
-    copyrightText: `© ${new Date().getFullYear()}, made by Sahan Dinuka.`,
+    copyrightText: `© ${new Date().getFullYear()}, made by Lakshika Madhushan.`,
 
     // dashboard
     totalVehicles: "Total Vehicles",

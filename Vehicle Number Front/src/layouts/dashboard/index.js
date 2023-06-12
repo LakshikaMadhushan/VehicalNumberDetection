@@ -11,6 +11,7 @@ import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
 import {strings} from '../../const/strings'
 import {dashboardData} from '../../services/dashboard'
 import {Component} from "react";
+import {dashbord} from '../../css/dashboard.css';
 
 const {sales, tasks} = reportsLineChartData;
 
@@ -43,9 +44,10 @@ class Dashboard extends Component {
                 <DashboardNavbar/>
                 <MDBox py={3}>
                     <Grid container spacing={3}>
-                        <Grid item xs={12} md={6} lg={3}>
+                        <Grid item xs={12} md={4} lg={6} >
                             <MDBox mb={1.5}>
                                 <ComplexStatisticsCard
+
                                     color="dark"
                                     icon="directions_car"
                                     title={strings.totalVehicles}
@@ -58,7 +60,7 @@ class Dashboard extends Component {
                                 />
                             </MDBox>
                         </Grid>
-                        <Grid item xs={12} md={6} lg={3}>
+                        <Grid item xs={12} md={6} lg={6}>
                             <MDBox mb={1.5}>
                                 <ComplexStatisticsCard
                                     icon="leaderboard"
@@ -72,7 +74,7 @@ class Dashboard extends Component {
                                 />
                             </MDBox>
                         </Grid>
-                        <Grid item xs={12} md={6} lg={3}>
+                        <Grid item xs={12} md={6} lg={6}>
                             <MDBox mb={1.5}>
                                 <ComplexStatisticsCard
                                     color="success"
@@ -87,7 +89,7 @@ class Dashboard extends Component {
                                 />
                             </MDBox>
                         </Grid>
-                        <Grid item xs={12} md={6} lg={3}>
+                        <Grid item xs={12} md={6} lg={6}>
                             <MDBox mb={1.5}>
                                 <ComplexStatisticsCard
                                     color="primary"
@@ -103,57 +105,6 @@ class Dashboard extends Component {
                             </MDBox>
                         </Grid>
                     </Grid>
-                    <MDBox mt={4.5}>
-                        <Grid container spacing={3}>
-                            <Grid item xs={12} md={6} lg={4}>
-                                <MDBox mb={3}>
-                                    <ReportsBarChart
-                                        color="info"
-                                        title="website views"
-                                        description="Last Campaign Performance"
-                                        date="campaign sent 2 days ago"
-                                        chart={reportsBarChartData}
-                                    />
-                                </MDBox>
-                            </Grid>
-                            <Grid item xs={12} md={6} lg={4}>
-                                <MDBox mb={3}>
-                                    <ReportsLineChart
-                                        color="success"
-                                        title="daily sales"
-                                        description={
-                                            <>
-                                                (<strong>+15%</strong>) increase in today sales.
-                                            </>
-                                        }
-                                        date="updated 4 min ago"
-                                        chart={sales}
-                                    />
-                                </MDBox>
-                            </Grid>
-                            <Grid item xs={12} md={6} lg={4}>
-                                <MDBox mb={3}>
-                                    <ReportsLineChart
-                                        color="dark"
-                                        title="completed tasks"
-                                        description="Last Campaign Performance"
-                                        date="just updated"
-                                        chart={tasks}
-                                    />
-                                </MDBox>
-                            </Grid>
-                        </Grid>
-                    </MDBox>
-                    {/*<MDBox>*/}
-                    {/*  <Grid container spacing={3}>*/}
-                    {/*    <Grid item xs={12} md={6} lg={8}>*/}
-                    {/*      <Projects />*/}
-                    {/*    </Grid>*/}
-                    {/*    <Grid item xs={12} md={6} lg={4}>*/}
-                    {/*      <OrdersOverview />*/}
-                    {/*    </Grid>*/}
-                    {/*  </Grid>*/}
-                    {/*</MDBox>*/}
                 </MDBox>
                 <Footer/>
             </DashboardLayout>

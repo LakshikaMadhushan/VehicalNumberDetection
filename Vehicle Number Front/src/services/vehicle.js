@@ -1,8 +1,4 @@
-/**
- * @author Sahan Dinuka
- * @CreatedBy IntelliJ IDEA
- * @created 17/12/2021 - 8:43 PM
- */
+
 import api from './apiHandler'
 
 export async function addVehicle(data) {

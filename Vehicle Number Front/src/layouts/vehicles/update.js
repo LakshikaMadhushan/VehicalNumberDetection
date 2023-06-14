@@ -1,8 +1,4 @@
-/**
- * @author Sahan Dinuka
- * @CreatedBy IntelliJ IDEA
- * @created 15/12/2021 - 9:57 PM
- */
+
 import React, {Component} from 'react';
 import {Button, Grid} from '@mui/material';
 import TextField from '@mui/material/TextField';
@@ -54,7 +50,7 @@ export default class UpdateVehicle extends Component {
         let state = this.state
         let data = {
             id: state.id,
-            name: 'Sahan',
+            name: 'Lakshika',
             vehicleNo: state.vehicleNo,
             model: state.model,
             colour: state.colour,

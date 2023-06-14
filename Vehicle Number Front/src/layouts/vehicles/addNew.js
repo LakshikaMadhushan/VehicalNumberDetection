@@ -1,8 +1,4 @@
-/**
- * @author Sahan Dinuka
- * @CreatedBy IntelliJ IDEA
- * @created 15/12/2021 - 9:57 PM
- */
+
 import React, {Component, useCallback} from 'react';
 import {Button, Grid, FilledInput} from '@mui/material';
 import TextField from '@mui/material/TextField';
@@ -66,7 +62,7 @@ export default class AddVehicle extends Component {
         let state = this.state
 
         let form = new FormData()
-        form.append('name', 'Sahan')
+        form.append('name', 'Lakshika')
         form.append('vehicleNo', state.vehicleNo)
         form.append('model', state.model)
         form.append('colour', state.colour)

@@ -1,8 +1,4 @@
-/**
- * @author Sahan Dinuka
- * @CreatedBy IntelliJ IDEA
- * @created 17/12/2021 - 8:37 PM
- */
+
 import axios from "axios";
 import {endpoint} from './apiconfig'
 

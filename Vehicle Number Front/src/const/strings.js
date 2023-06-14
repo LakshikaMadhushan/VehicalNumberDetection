@@ -1,8 +1,4 @@
-/**
- * @author Sahan Dinuka
- * @CreatedBy IntelliJ IDEA
- * @created 12/12/2021 - 12:33 PM
- */
+
 export const strings = {
     // footer
     copyrightText: `© ${new Date().getFullYear()}, made by Lakshika Madhushan.`,

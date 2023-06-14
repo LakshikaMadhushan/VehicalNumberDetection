@@ -1,8 +1,4 @@
-/**
- * @author Sahan Dinuka
- * @CreatedBy IntelliJ IDEA
- * @created 13/12/2021 - 1:11 PM
- */
+
 export const vehicleTableColumn = [
     {Header: "Owner Name", accessor: "ownerName", align: "left"},
     {Header: "Vehicle No", accessor: "vehicleNo", align: "left"},

@@ -1,8 +1,4 @@
-/**
- * @author Sahan Dinuka
- * @CreatedBy IntelliJ IDEA
- * @created 18/12/2021 - 6:44 PM
- */
+
 import React, {Component} from 'react';
 import MDButton from "../../components/MDButton";
 import {deleteVehicle} from '../../services/vehicle'

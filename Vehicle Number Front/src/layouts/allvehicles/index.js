@@ -1,8 +1,4 @@
-/**
- * @author Sahan Dinuka
- * @CreatedBy IntelliJ IDEA
- * @created 13/12/2021 - 1:01 PM
- */
+
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import MDBox from "components/MDBox";
@@ -32,7 +28,7 @@ class AllVehicles extends Component {
         this.setState({isLoading: true})
         axios({
             method: "get",
-            url: `https://www.regcheck.org.uk/api/reg.asmx/Check?RegistrationNumber=${this.state.input}&username=sahan`,
+            url: `https://www.regcheck.org.uk/api/reg.asmx/Check?RegistrationNumber=${this.state.input}&username=lakshika`,
             header: {
                 "Content-Type": "application/xml; charset=utf-8"
             }

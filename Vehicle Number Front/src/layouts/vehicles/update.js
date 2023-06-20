@@ -26,6 +26,7 @@ export default class UpdateVehicle extends Component {
     }
 
     handleClickOpen = (state) => {
+        window.location.reload(true)
         let data = this.props.data
         this.setState({
             open: state,
@@ -36,6 +37,7 @@ export default class UpdateVehicle extends Component {
             colour: data.colour,
             type: data.type
         })
+
     };
 
     onInputHandler = (e) => {
@@ -63,6 +65,7 @@ export default class UpdateVehicle extends Component {
                 this.handleClickOpen(false)
             }
         })
+        window.location.reload(true)
     }
 
 
